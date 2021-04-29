@@ -1,5 +1,5 @@
-*.md
-*.yml
-Dockerfile
-.git
-.gitignore
+# Ignore everything
+*
+
+# Allow files and directories
+!/entrypoint.sh

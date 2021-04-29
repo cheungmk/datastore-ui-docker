@@ -19,13 +19,13 @@ services:
       - 8081:8081
 
   datastore-ui:
-    image: skarpdev/google-datastore-ui:1.0.0
+    image: cheungmk/datastore-ui:0.2.2
     environment:
       DSUI_PROJECT_ID: dsui-local
-      DSUI_PORT: 8282
+      DSUI_PORT: 8082
       DSUI_DATASTORE_ENDPOINT: datastore:8081
     ports:
-      - 8282:8282
+      - 8082:8082
     depends_on:
       - datastore
     links:
